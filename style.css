@@ -1,0 +1,145 @@
+.notification {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2E4d4F; 
+    color: #fff;
+    text-align: center;
+    padding: 20px; 
+    margin-bottom: 20px; 
+    z-index: 1000;
+    border-radius: 8px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #13282A; 
+    background-color: #F2F5F5; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #091d1E; 
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+
+form {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2E4d4F;
+    font-weight: bold;
+}
+
+input,
+button {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #13282A;
+    border: 1px solid #2E4d4F; 
+    border-radius: 5px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus,
+button:focus {
+    border-color: #13282A;
+}
+
+button {
+    background-color: #2E4d4F;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #091d1E;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+a {
+    color: #091d1E; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #384747; 
+}
+
+#genre-suggestions {
+    position: absolute;
+    width: 800px;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease;
+    border-radius: 5px;
+}
+
+#genre-suggestions div {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#genre-suggestions div:hover {
+    background-color: #f2f2f2;
+}
